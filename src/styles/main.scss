@@ -1,7 +1,7 @@
 html, body, div, span, h1, p, a{border:0;font-family:inherit;font-size:100%;margin:0;outline:0;padding:0;}
 :focus{outline:0;}
 html, body{height:100%;}
-body{font-family:"Helvetica Neue",Helvetica,"Noto Sans",sans-serif}
+body{font-family:"游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif}
 *{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -9,6 +9,10 @@ body{font-family:"Helvetica Neue",Helvetica,"Noto Sans",sans-serif}
 }
 p, li, h1, h2, h3, h4, h5, h6, ul {
   -webkit-font-smoothing: antialiased;
+}
+
+ul, ol {
+	list-style: none;
 }
 
 .wrapper {
@@ -19,6 +23,17 @@ p, li, h1, h2, h3, h4, h5, h6, ul {
 }
 
 .content-wrap {
-    max-width: 1200px;
-    margin: 0px auto;
+	position: relative;
 }
+
+.content {
+  max-width: 1200px;
+	height: 100%;
+  margin: 0px auto;
+}
+
+.main-container {
+	height: 2000px;
+}
+
+@import "partials/header";

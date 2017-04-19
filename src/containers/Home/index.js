@@ -7,7 +7,7 @@ export default class HomePage extends React.Component {
   render() {
     return (
       <MasterLayout>
-      
+          <div className="test"></div>
       </MasterLayout>
     );
   }
