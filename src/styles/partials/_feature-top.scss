@@ -1,0 +1,39 @@
+.feature-top {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  z-index: 10000;
+  .animation-block {
+    padding-top: 300px;
+    color: #ec6320;
+  }
+  &.home {
+    background: url(../../assets/images/bg-home.jpg) no-repeat center top;
+    .animation-block {
+      p {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 0 #fff, 2px 2px 0 #ec6320;
+        &:nth-child(1) {
+          font-size: 2.6em;
+        }
+        &:nth-child(2) {
+          font-size: 2em;
+        }
+        &:last-child {
+          text-shadow: none;
+          margin-top: 20px;
+          a {
+            text-decoration: none;
+            color: white;
+            background: #ec6320;
+            padding: 15px;
+            display: inline-block;
+            width: 200px;
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+  }
+}

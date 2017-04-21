@@ -3,6 +3,7 @@
 import React from 'react';
 import Header from '../Partials/Header';
 import Footer from '../Partials/Footer';
+import FeatureTop from '../Partials/FeatureTop';
 
 export default class MasterLayout extends React.Component {
   render() {
@@ -10,6 +11,7 @@ export default class MasterLayout extends React.Component {
     return (
       <div className="content-wrap">
           <Header/>
+          { this.props.feature ? <FeatureTop name={this.props.feature} /> : null }
           <main className="main-container">{childrenWithProps}</main>
           <Footer/>
       </div>

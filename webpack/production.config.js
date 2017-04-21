@@ -97,8 +97,7 @@ module.exports = {
       minRatio: 0.8
     }),
     new CopyWebpackPlugin([
-      { from: Path.join(__dirname, '../index.html'), to: Path.join(__dirname, '../public/index.html') },
-      { from: Path.join(__dirname, '../assets'), to: Path.join(__dirname, '../public/assets') }
+      { from: Path.join(__dirname, '../index.html'), to: Path.join(__dirname, '../public/index.html') }
     ])
   ]
 };

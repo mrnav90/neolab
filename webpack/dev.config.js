@@ -58,8 +58,7 @@ module.exports = {
     new Webpack.optimize.DedupePlugin(),
     new Webpack.optimize.OccurenceOrderPlugin(),
     new CopyWebpackPlugin([
-      { from: Path.join(__dirname, '../index.html'), to: Path.join(__dirname, '../dist/index.html') },
-      { from: Path.join(__dirname, '../assets'), to: Path.join(__dirname, '../dist/assets') }
+      { from: Path.join(__dirname, '../index.html'), to: Path.join(__dirname, '../dist/index.html') }
     ])
   ]
 };

@@ -29,9 +29,7 @@ export default class Header extends React.Component {
     return (
       <header className={this.state.headerClass}>
           <div className="content">
-              <a href="http://jobs.neo-lab.vn/" className="logo">
-                  <img width="150" height="50" src="/assets/images/logo.png" />
-              </a>
+              <a href="http://jobs.neo-lab.vn/" className="logo"></a>
               <nav className="nav-menu">
                   <ul>
                       <li><Link to="/"><span>Trang chủ</span></Link></li>
