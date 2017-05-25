@@ -1,17 +1,13 @@
 .header-container {
   width: 100%;
   height: 100px;
-  position: relative;
-  box-shadow: none;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99999;
   background: #fff;
   font-family: 'noto sans';
-  &.sticky-header {
-    position: fixed;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-  }
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   .logo {
     display: block;
     margin-top: 25px;

@@ -1,10 +1,16 @@
 .feature-top {
   width: 100%;
+  min-height: 100%;
   height: 500px;
+  margin-top: 100px;
   text-align: center;
   z-index: 10000;
+  position: relative;
   .animation-block {
-    padding-top: 300px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 100px;
     color: #ec6320;
   }
   &.home {
